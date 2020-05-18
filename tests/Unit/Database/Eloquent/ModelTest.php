@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Esazykin\LaravelClickHouse\Tests\Unit\Database\Eloquent;
+namespace BiblioOnline\LaravelClickHouse\Tests\Unit\Database\Eloquent;
 
 use Illuminate\Support\Carbon;
 use PHPUnit\Framework\TestCase;
-use Esazykin\LaravelClickHouse\Tests\Helpers;
-use Esazykin\LaravelClickHouse\Tests\EloquentModelTest;
+use BiblioOnline\LaravelClickHouse\Tests\Helpers;
 use Illuminate\Database\Eloquent\MassAssignmentException;
-use Esazykin\LaravelClickHouse\Tests\EloquentModelWithTest;
-use Esazykin\LaravelClickHouse\Tests\EloquentModelCastingTest;
+use BiblioOnline\LaravelClickHouse\Tests\EloquentModelTest;
+use BiblioOnline\LaravelClickHouse\Tests\EloquentModelWithTest;
+use BiblioOnline\LaravelClickHouse\Tests\EloquentModelCastingTest;
 
 class ModelTest extends TestCase
 {
