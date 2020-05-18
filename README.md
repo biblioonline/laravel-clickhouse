@@ -7,6 +7,7 @@ Eloquent model for ClickHouse
 
 ## Prerequisites
 - php 7.1
+- laravel 5.1
 - clickhouse server
 
 ## Installation
