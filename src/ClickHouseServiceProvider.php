@@ -11,6 +11,7 @@ use BiblioOnline\LaravelClickHouse\Database\Eloquent\Model;
 
 class ClickHouseServiceProvider extends ServiceProvider
 {
+
     public function boot(): void
     {
         /** @var DatabaseManager $db */
@@ -24,4 +25,15 @@ class ClickHouseServiceProvider extends ServiceProvider
 
         Model::setConnectionResolver($db);
     }
+
+    /**
+     * Register the service provider.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+
 }
