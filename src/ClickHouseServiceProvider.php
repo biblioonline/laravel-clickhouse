@@ -15,7 +15,7 @@ class ClickHouseServiceProvider extends ServiceProvider
     public function boot(): void
     {
         /** @var DatabaseManager $db */
-        $db = $this->app->get('db');
+        $db = $this->app['db'];
 
         $db->extend('clickhouse', function ($config, $name) {
             $config['name'] = $name;
@@ -31,7 +31,7 @@ class ClickHouseServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register():void
     {
         //
     }

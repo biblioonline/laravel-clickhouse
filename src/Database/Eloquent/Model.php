@@ -11,12 +11,8 @@ use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Arrayable;
 use Tinderbox\ClickhouseBuilder\Query\Grammar;
 use Illuminate\Database\ConnectionResolverInterface;
-use Illuminate\Database\Eloquent\Concerns\HasEvents;
 use Illuminate\Database\Eloquent\JsonEncodingException;
 use Illuminate\Database\Eloquent\MassAssignmentException;
-use Illuminate\Database\Eloquent\Concerns\HidesAttributes;
-use Illuminate\Database\Eloquent\Concerns\GuardsAttributes;
-use Illuminate\Database\Eloquent\Concerns\HasRelationships;
 use Illuminate\Database\ConnectionResolverInterface as Resolver;
 use BiblioOnline\LaravelClickHouse\Database\Connection;
 use BiblioOnline\LaravelClickHouse\Database\Query\Builder as QueryBuilder;
@@ -26,11 +22,11 @@ use BiblioOnline\LaravelClickHouse\Database\Query\Builder as QueryBuilder;
  */
 abstract class Model implements ArrayAccess, Arrayable, Jsonable, JsonSerializable
 {
-    use Concerns\HasAttributes,
-        HasEvents,
-        HasRelationships,
-        HidesAttributes,
-        GuardsAttributes;
+    use Concerns\HasEvents;
+    use Concerns\HasAttributes;
+    use Concerns\HasRelationships;
+    use Concerns\HidesAttributes;
+    use Concerns\GuardsAttributes;
 
     /**
      * The connection name for the model.

@@ -4,12 +4,8 @@ declare(strict_types=1);
 
 namespace BiblioOnline\LaravelClickHouse\Database\Eloquent\Concerns;
 
-use Illuminate\Database\Eloquent\Concerns\HasAttributes as BaseHasAttributes;
-
 trait HasAttributes
 {
-    use BaseHasAttributes;
-
     public function getDates(): array
     {
         return $this->dates;
