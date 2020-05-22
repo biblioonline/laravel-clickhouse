@@ -8,10 +8,10 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Contracts\Support\Arrayable;
-use Illuminate\Database\Concerns\BuildsQueries;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Database\Eloquent\RelationNotFoundException;
+use BiblioOnline\LaravelClickHouse\Database\Concerns\BuildsQueries;
 use BiblioOnline\LaravelClickHouse\Database\Query\Builder as QueryBuilder;
 
 /**
