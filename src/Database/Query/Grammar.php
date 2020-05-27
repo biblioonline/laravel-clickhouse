@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace BiblioOnline\LaravelClickHouse\Database\Query;
 
+use DateTimeInterface;
 use Tinderbox\ClickhouseBuilder\Query\Grammar AS BaseGrammar;
 
 class Grammar extends BaseGrammar
