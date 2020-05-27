@@ -8,9 +8,9 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Tinderbox\Clickhouse\Common\Format;
 use Illuminate\Support\Traits\Macroable;
-use Tinderbox\ClickhouseBuilder\Query\Grammar;
 use Tinderbox\ClickhouseBuilder\Query\BaseBuilder;
 use BiblioOnline\LaravelClickHouse\Database\Connection;
+use BiblioOnline\LaravelClickHouse\Database\Query\Grammar;
 
 class Builder extends BaseBuilder
 {
